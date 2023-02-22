@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehaish Inn Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<header>
+    <div class="content flex_space">
+        <div class="logo">
+            <img src="./images/hotel-logo.jpg" alt="">
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#rooms">rooms</a></li>
+                <li><a href="#pages">pages</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><i class="fa fa-search"></i></li>
+                <li><button class="primary-btn">BOOK NOW</button></li>
+            </ul>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "100vh";
+        } else {
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+<section class="home">
+    <div class="content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./images/banner-1.png" alt="">
+                <div class="text">
+                    <div class="flex">
+                        <button class="primary-btn">READ MORE</button>
+                        <button class="secondary-btn">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/banner-2.jpg" alt="">
+                <div class="text">
+                    <div class="flex">
+                        <button class="primary-btn">READ MORE</button>
+                        <button class="secondary-btn">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/banner-3.jpg" alt="">
+                <div class="text">
+                    <div class="flex">
+                        <button class="primary-btn">READ MORE</button>
+                        <button class="secondary-btn">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/banner-4.jpg" alt="">
+                <div class="text">
+                    <div class="flex">
+                        <button class="primary-btn">READ MORE</button>
+                        <button class="secondary-btn">CONTACT US</button>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    navText:["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive: {
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+
+<section class="book">
+    <div class="container flex_space">
+        <div class="text">
+            <h1><span>Book </span> Your Rooms </h1>
+        </div>
+        <div class="form">
+            <form class="grid">
+                <input type="date" placeholder="Arrival Date">
+                <input type="date" placeholder="Departure Date">
+                <input type="number" placeholder="Adults">
+                <input type="number" placeholder="Children">
+                <input type="submit" placeholder="CHECK AVAILABILITY">
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="about top">
+    <div class="container flex">
+        <div class="left">
+            <div class="heading">
+                <h1>WELCOME</h1>
+                <h2>Rehaish Inn</h2>
+            </div>
+            <p>It is our pleasure to welcome you to (Rehaish Inn Hotel). Whether you are travelling on business or pleasure, we know you have a variety of hotels to choose from. We strive to provide you with a room that is clean and comfortable, with friendly attentive service at a value-conscious price.</p>
+            <button class="primary-btn">ABOUT US</button>
+        </div>
+        <div class="right">
+            <img src="./images/about.jpg" alt="" height="300px" width="500px">
+        </div>
+    </div>
+</section>
+
+
+<section class="counter top">
+    <div class="container grid">
+        <div class="box">
+            <h1>2500</h1>
+            <hr>
+            <span>Customer</span>
+        </div>
+        <div class="box">
+            <h1>1250</h1>
+            <hr>
+            <span>Happy Customer</span>
+        </div>
+        <div class="box">
+            <h1>150</h1>
+            <hr>
+            <span>Expert Technicians</span>
+        </div>
+        <div class="box">
+            <h1>3550</h1>
+            <hr>
+            <span>Dekstop Reaired</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="rooms">
+    <div class="container top">
+        <div class="heading">
+            <h1>EXPLORE</h1>
+            <h2>Our Rooms</h2>
+            <p>Our best hotel room is spacious and elegantly designed to accommodate everyone, whether you are travelling with family or for business or leisure.</p>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-1.jpg" alt="" >
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999<span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999 <span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999 <span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999 <span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999 <span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999<span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-7.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999<span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="images">
+                        <img src="./images/room-8.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Superior Rooms</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Space in the room and closet for clothing and luggage.<br>
+                            A comfortable bed with lots of pillows and bed covers.<br>
+                            A bedside table and reading light.<br>
+                            Wastebasket.<br>
+                            Convenient power outlets for phones and tablets.<br>
+                            Towels and basic toiletries.<br>
+                            Water bottles or drinking glasses.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">BOOK NOW</button>
+                            <h3>Rs 4999<span> <br> Per Night </span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 40,
+    nav: true,
+    dots: false,
+    navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive: {
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin:10,
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+
+
+<section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2>Our Gallery</h2>
+            <p>Our best hotel gallery is spacious and elegantly designed with modern art, so you can glamour and enjoy your time.</p>
+        </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-1.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-2.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-3.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-4.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-5.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="./images/gallery-6.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo Title Here.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive: {
+        0:{
+            items:1
+        },
+        768:{
+            items:4,
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+</script>
+
+
+<section class="services top">
+    <div class="container">
+        <div class="heading">
+            <h1>SERVICES</h1>
+            <h2>Our Services</h2>
+            <p>Our best hotel services include the Inhouse Resturant with vast menu choices we deliever what we promise a quality food, safe and secured CCTV monitored car parking, laundry services and provide all the nessecities you want.</p>
+        </div>
+
+        <div class="content flex_space">
+            <div class="left grid2">
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <h3>Delicious Food</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-person-biking"></i>
+                        <h3>Fitness</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>Inhouse Resturant</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-parking"></i>
+                        <h3>Secured Parking</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./images/service.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="" alt="">
+            <p>Enjoy your time in a very comfortable and secured environment, we facilitate you with the luxuries of our hotel and explore the city of lights karachi with our special tourist guide with safe and secured facilities. Our best hotel is spacious and elegantly designed to accommodate everyone, whether you are travelling with family or for business or leisure.</p>
+
+            <div class="icon">
+                <i class="fa fa-facebook-f"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li>History</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Your best decision is to be with us, we are just five minutes away from Jinnah International Airport and many famous places in karachi, we accomodate you with pick and drop services.</p>
+            <i class="fa fa-location-dot"></i>
+            <label>House # Street 15/2, Block-B Kazimabad, Model Colony, Karachi</label><br>
+            <i class="fa fa-phone"></i>
+            <label>0213-4494653</label> <br>
+            <i class="fa fa-envelope"></i>
+            <label>Rehaishinn@gmail.com</label>
+        </div>
+    </div>
+</footer>
+
+
+<div class="legal">
+    <p class="container">Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+    <p class="container">Registration: #Sindh 452</p>
+    <p class="container">License: 549</p>
+</div>
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js"></script>
+</body>
+</html>
